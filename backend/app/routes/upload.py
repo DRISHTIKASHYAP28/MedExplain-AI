@@ -38,7 +38,7 @@ router = APIRouter(
 # UPLOAD DIRECTORY
 # ============================================================
 
-UPLOAD_DIR = "uploads"
+UPLOAD_DIR = "/tmp"
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
