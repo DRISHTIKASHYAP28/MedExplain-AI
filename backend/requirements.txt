@@ -1,6 +1,9 @@
 fastapi
 uvicorn
+python-multipart
 pdfplumber
 google-genai
 python-dotenv
-python-multipart
+pandas
+scikit-learn
+joblib
