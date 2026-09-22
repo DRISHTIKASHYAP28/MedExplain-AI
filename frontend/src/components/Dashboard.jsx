@@ -158,7 +158,7 @@ function Dashboard({ onBack }) {
             setIsAnalyzing(true);
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/analyze",
+                "https://backend-pink-five-90.vercel.app/api/analyze",
                 {
                     method: "POST",
                     body: formData
@@ -257,7 +257,7 @@ function Dashboard({ onBack }) {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:8000/api/chat",
+                "https://backend-pink-five-90.vercel.app/api/chat",
                 {
                     method: "POST",
 
