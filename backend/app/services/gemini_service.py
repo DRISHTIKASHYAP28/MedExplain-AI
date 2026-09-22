@@ -137,11 +137,14 @@ If no measurements can be identified, return:
         return []
 
     except Exception as e:
-        print(
-            f"ERROR extracting measurements from image: {str(e)}"
-        )
-        return []
-
+      print(
+        f"ERROR extracting measurements from image: "
+        f"{type(e).__name__}: {str(e)}"
+    )
+    raise RuntimeError(
+        f"Gemini image extraction failed: "
+        f"{type(e).__name__}: {str(e)}"
+    )
 
 # ============================================================
 # EXTRACT MEASUREMENTS FROM TEXT
